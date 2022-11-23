@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from "react-redux";
 import { deleteTask } from "../redux/taskSlice";
 
-const TodoItem = ({ id, title }) => {
+const TodoItem = ({ id, title, checked }) => {
 
 	const dispatch = useDispatch();
 
@@ -20,9 +20,10 @@ const TodoItem = ({ id, title }) => {
 				{title}
 			</div>
 			<div>
+        <input type="checkbox" checked={checked}></input>
 				<button className="remove-task-button" onClick={()=>{
 					removeTask();
-				}}>Supprimer</button>
+				}}>Delete</button>
 			</div>
 		</li>
 	);

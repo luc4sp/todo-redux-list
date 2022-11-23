@@ -12,7 +12,7 @@ const AddTodo = () => {
 
 		if(value.trim().length === 0)
 		{
-			alert("Entrez une tâche avant de l'ajouter !!");
+			alert("Enter the name before !!");
 			setValue("");
 			return;
 		}
@@ -31,13 +31,13 @@ const AddTodo = () => {
 			<input
 				type="text"
 				className="task-input"
-				placeholder="nom de la tâche"
+				placeholder="Task name"
 				value={value}
 				onChange={(event) => setValue(event.target.value)}
 			></input>
 
 			<button className="task-button" onClick={onSubmit}>
-				Ajouter
+				Add
 			</button>
 		</div>
 	);
