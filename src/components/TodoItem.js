@@ -22,7 +22,7 @@ const TodoItem = ({ id, title }) => {
 			<div>
 				<button className="remove-task-button" onClick={()=>{
 					removeTask();
-				}}>Delete</button>
+				}}>Supprimer</button>
 			</div>
 		</li>
 	);

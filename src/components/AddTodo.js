@@ -12,7 +12,7 @@ const AddTodo = () => {
 
 		if(value.trim().length === 0)
 		{
-			alert("Enter a task before adding !!");
+			alert("Entrez une tâche avant de l'ajouter !!");
 			setValue("");
 			return;
 		}
@@ -37,7 +37,7 @@ const AddTodo = () => {
 			></input>
 
 			<button className="task-button" onClick={onSubmit}>
-				Save
+				Ajouter
 			</button>
 		</div>
 	);
