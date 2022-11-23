@@ -31,7 +31,7 @@ const AddTodo = () => {
 			<input
 				type="text"
 				className="task-input"
-				placeholder="Add task"
+				placeholder="nom de la tâche"
 				value={value}
 				onChange={(event) => setValue(event.target.value)}
 			></input>
