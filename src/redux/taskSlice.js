@@ -14,10 +14,18 @@ export const tasksSlice = createSlice({
         },
         deleteTask: (state, action)=>{
             return state.filter((item) => item.id !== action.payload.id);
+        },
+        duplicateTask: (state, action) => {
+            const newTask = {
+                id: new Date(),
+                name: action.payload.title,
+                checked: action.payload.checked
+            }
+            state.push(newTask);
         }
     }
 });
 
-export const {addTask, deleteTask} = tasksSlice.actions;
+export const {addTask, deleteTask, duplicateTask} = tasksSlice.actions;
 
 export default tasksSlice.reducer;

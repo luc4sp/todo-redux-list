@@ -75,6 +75,19 @@ body{
     border:none;
 }
 
+.duplicate-task-button{
+  background-color: green;
+  height: 32px;
+  color: white;
+  border-radius: 4px;
+  width: 70px;
+  border:none;
+}
+
+.duplicate-task-button:hover {
+  cursor: pointer;
+}
+
 .remove-task-button:hover{
     cursor: pointer;
 }
