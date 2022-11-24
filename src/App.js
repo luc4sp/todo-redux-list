@@ -1,7 +1,5 @@
 
 import React, {useState} from 'react';
-import AddTodo from './components/AddTodo';
-import TodoList from './components/TodoList';
 import { Configuration, OpenAIApi } from "openai";
 import ReactLoading from 'react-loading';
 
@@ -63,7 +61,7 @@ const App = () => {
         
         {loading ? 
         <ReactLoading type="spin" color="black" height={'10%'} width={'10%'} /> : 
-        <img className="result-image" src={result} />
+        <img className="result-image" src={result} alt="res" />
         }
 
         <h2>Conversation with an AI</h2>
@@ -82,9 +80,3 @@ const App = () => {
 };
 
 export default App;
-
-		{/*<div className="app">
-			<h1 className="app-title">Todo List</h1>
-			<AddTodo />
-			<TodoList />
-		</div>*/}
