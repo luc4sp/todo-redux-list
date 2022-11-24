@@ -11,7 +11,7 @@ const App = () => {
   const [aiResponse, setAiResponse] = useState("");
 
   const configuration = new Configuration({
-    apiKey: "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"
+    apiKey: process.env.REACT_APP_OPEN_AI_KEY
   });
   
   const openai = new OpenAIApi(configuration);
